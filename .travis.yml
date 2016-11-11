@@ -109,6 +109,12 @@ install:
 - |
   case "$BUILD" in
     stack)
+      stack --no-terminal --install-ghc $ARGS install hsc2hs
+      ;;
+  esac
+- |
+  case "$BUILD" in
+    stack)
       stack --no-terminal --install-ghc $ARGS test --only-dependencies
       ;;
     cabal)

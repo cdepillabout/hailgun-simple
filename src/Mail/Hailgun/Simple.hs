@@ -19,7 +19,6 @@ module Mail.Hailgun.Simple
   , Email(..)
   , sendEmail
   , emailToHailgunMessage
-  , st
   , MessageContent
   ) where
 
@@ -35,7 +34,6 @@ import Mail.Hailgun
         MessageContent(..), MessageRecipients(..), hailgunMessage)
 import qualified Mail.Hailgun as Hailgun
 import Text.Email.Validate (EmailAddress, toByteString)
-import Text.Shakespeare.Text (st)
 
 class HasHailgunContext r where
   getHailgunContext :: r -> HailgunContext
