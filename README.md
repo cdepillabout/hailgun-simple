@@ -12,4 +12,5 @@ This module provides an easy-to-use, simple wrapper around the
 
 ## Usage
 
-TODO
+There is a simple usage example in the hackage
+[documentation](https://hackage.haskell.org/package/hailgun-simple/docs/Mail-Hailgun-Simple.html).
