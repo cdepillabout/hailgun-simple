@@ -19,8 +19,8 @@ is a package providing a way to send email using
 Here is a short example of how to use this package:
 
 @
-  {-# LANGUAGE OverloadedStrings #-}
-  {-# LANGUAGE QuasiQuotes #-}
+  \{\-\# LANGUAGE OverloadedStrings \#\-\}
+  \{\-\# LANGUAGE QuasiQuotes \#\-\}
 
   module FooBar where
 
@@ -40,7 +40,7 @@ Here is a short example of how to use this package:
     -> 'ReaderT' 'HailgunContext' 'IO' ('Either' 'EmailError' 'ResponseFromMailgun')
   sendEmailToNewUser name emailaddress = do
     let email = 'Email'
-          { 'emailSubject' = "Thank's for signing up!"
+          { 'emailSubject' = "Thanks for signing up!"
           , 'emailBody' = 'TextOnly' $ 'encodeUtf8' body
           , 'emailReplyTo' = myEmailAddress
           , 'emailRecipientsTo' = [emailaddress]
